@@ -17,7 +17,6 @@ function calculate(button) {
         let result = new Function('return' + accumulativeCalculation.replace(/x/g, '*').replace(/÷/g, '/'))
         ();
         screenDisplay.textContent = result;
-            //screenDisplay.textContent = eval(accumulativeCalculation)
     } else {
         calculation.push(value)
         accumulativeCalculation = calculation.join('')

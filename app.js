@@ -14,8 +14,7 @@ function calculate(button) {
         screenDisplay.textContent = '.'
 
     } else if (value == "=") {
-        let result = new Function('return' + accumulativeCalculation.replace(/x/g, '*').replace(/÷/g, '/'))
-        ();
+        let result = new Function('return ' + accumulativeCalculation.replace(/x/g, '*').replace(/÷/g, '/'))();
         screenDisplay.textContent = result;
     } else {
         calculation.push(value)
